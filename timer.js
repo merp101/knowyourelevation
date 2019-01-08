@@ -5,10 +5,14 @@ var min = 39;
 if (mult == undefined) {
   mult = false;
 }
+if (cheater == undefined) {
+  cheater = false;
+}
 
 function incTimer() {
+  let thresh = (cheater) ? (250 * 1000) : 250;
   ms += 1;
-  if (ms == 250) {
+  if (ms == thresh) {
      if (sec == 1) {
         sec = 59;
         min -= 1;
