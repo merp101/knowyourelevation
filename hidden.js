@@ -1,6 +1,6 @@
 var cheater = false;
 var mult = false;
-body.addEventListener('keypress', function() {
+body.addEventListener('keydown', function() {
    var x = event.charCode;
    console.log(x);
    if (x == 13) { //enter
