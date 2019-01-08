@@ -20,7 +20,7 @@ function incTimer() {
      }
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
-  elevation -= (13/200) * ((mult) ? 1000 : 1);
+  elevation -= (39000 / (1000 * 60 * 40)) * ((mult) ? 1000 : 1);
 }
   
 
