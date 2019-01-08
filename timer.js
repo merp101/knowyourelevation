@@ -6,11 +6,11 @@ if (mult == undefined) {
   mult = false;
 }
 if (cheater == undefined) {
-  cheater = false;
+  cheater = 0;
 }
 
 function incTimer() {
-  let thresh = (cheater) ? (250 / 1000) : 250;
+  if (cheater < 2) let thresh = 250; else let thresh = 250/1000;
   ms += 1;
   if (ms >= thresh) {
      if (sec == 1) {
