@@ -25,23 +25,17 @@ function incTimer() {
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
   elevation -= (39000 / (1000 * 60 * 40)) * ((mult) ? 1000 : 1);
-}
-  
-
-function loop() {
-  if (elevation <= 0) {
+	if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").display="none";
-    } else {
-      incTimer();
-    }
+  }
 }
 
 setInterval(
   function(){
     setTimeout(
       function(){
-        loop()
+        incTimer();
       },
     1)
   },
