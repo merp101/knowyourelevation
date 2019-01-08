@@ -1,7 +1,7 @@
 var cheater = false;
 var mult = false;
 body.addEventListener('keydown', function() {
-   var x = event.charCode;
+   var x = event.keyCode;
    console.log(x);
    if (x == 13) { //enter
        if (document.getElementById("capitalLocation").value == "Helsinki" || document.getElementById("capitalLocation").value == "helsinki") {alert("you win")}
