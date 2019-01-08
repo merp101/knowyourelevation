@@ -10,7 +10,9 @@ if (cheater == undefined) {
 }
 
 function incTimer() {
-  if (cheater < 2) let thresh = 250; else let thresh = 250/1000;
+  if (cheater < 2) {
+		let thresh = 250; 
+  } else let thresh = 250/1000;
   ms += 1;
   if (ms >= thresh) {
      if (sec == 1) {
