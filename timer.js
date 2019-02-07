@@ -3,17 +3,9 @@ var ms = 1;
 var sec = 60;
 var min = 39;
 let thresh;
-if (mult == undefined) {
-  mult = false;
-}
-if (cheater == undefined) {
-  cheater = 0;
-}
 
 function incTimer() {
-  if (cheater < 2) { // 'cheater' incrememnts by 1, starting at 0, every time they "cheat"
-    thresh = 250; 
-  } else thresh = 250/1000;
+  thresh = 250;
   ms += 1;
   if (ms >= thresh) {
      if (sec == 1) {
@@ -27,8 +19,8 @@ function incTimer() {
      }
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
-  elevation -= (39000 / (1000 * 60 * 40)) * ((mult) ? 1000 : 1);
-	if (elevation <= 0) {
+  elevation -= (39000 / (1000 * 60 * 40);
+  if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").display="none";
   }
