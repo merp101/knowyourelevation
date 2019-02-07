@@ -19,7 +19,7 @@ function incTimer() {
      }
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
-  elevation -= (39000 / (1000 * 60 * 40);
+  elevation -= (39000 / (1000 * 60 * 40));
   if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").display="none";
