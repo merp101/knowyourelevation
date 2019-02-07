@@ -2,6 +2,7 @@ var elevation = 39000;
 var ms = 1;
 var sec = 60;
 var min = 39;
+let thresh;
 if (mult == undefined) {
   mult = false;
 }
@@ -11,8 +12,8 @@ if (cheater == undefined) {
 
 function incTimer() {
   if (cheater < 2) { // 'cheater' incrememnts by 1, starting at 0, every time they "cheat"
-    let thresh = 250; 
-  } else let thresh = 250/1000;
+    thresh = 250; 
+  } else thresh = 250/1000;
   ms += 1;
   if (ms >= thresh) {
      if (sec == 1) {
