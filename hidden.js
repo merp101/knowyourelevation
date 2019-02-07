@@ -16,5 +16,5 @@ body.addEventListener('keydown', function() {
 });
 function showRiddle() {
    document.getElementById("letter").display="block";
-   document.getElementById("topLeftStuff").display="none";
+   document.getElementByClass("left").display="none";
 }
