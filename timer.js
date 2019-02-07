@@ -10,8 +10,8 @@ if (cheater == undefined) {
 }
 
 function incTimer() {
-  if (cheater < 2) {
-		let thresh = 250; 
+  if (cheater < 2) { // 'cheater' incrememnts by 1, starting at 0, every time they "cheat"
+    let thresh = 250; 
   } else let thresh = 250/1000;
   ms += 1;
   if (ms >= thresh) {
