@@ -6,7 +6,7 @@ body.addEventListener('keydown', function() {
    }
 });
 function showThing() {
-   document.getElementById("code").display="block";
-   document.getElementById("topLeftStuff").display="none";
-   document.getElementById("capitalLocation").display="none";
+   document.getElementById("code").style.display="block";
+   document.getElementById("topLeftStuff").style.display="none";
+   document.getElementById("capitalLocation").style.display="none";
 }
