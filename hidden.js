@@ -7,5 +7,5 @@ body.addEventListener('keydown', function() {
 });
 function showThing() {
    document.getElementById("code").display="block";
-   document.getElementByClass("left").display="none";
+   document.getElementById("topLeftStuff").display="none";
 }
