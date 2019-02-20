@@ -27,6 +27,12 @@ function incTimer() {
   }
 }
 
+function setBaseMin(x) {
+	baseMin = x;
+	min = x;
+	sec = 0;
+}
+
 setInterval(
   function(){
     setTimeout(
