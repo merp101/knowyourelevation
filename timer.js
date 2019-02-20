@@ -1,6 +1,6 @@
 var elevation = 39000;
 var ms = 1;
-var sec = 60;
+var sec = 0;
 var baseMin = 35;
 var min = baseMin;
 let thresh;
