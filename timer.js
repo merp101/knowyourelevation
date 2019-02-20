@@ -8,7 +8,7 @@ function incTimer() {
   thresh = 250;
   ms += 1;
   if (ms >= thresh) {
-     if (sec == 1) {
+     if (sec == 0) {
         sec = 59;
         min -= 1;
      } else { 
