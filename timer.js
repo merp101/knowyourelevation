@@ -25,8 +25,8 @@ function incTimer() {
      }
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
-  elevation -= (baseElevation / (1000 * 5 * baseMin));
-  if (elevation <= 0) {
+  elevation -= (baseElevation / (1000 * 60 * baseMin));
+  if (min == 0 && sec == 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").style.display="none";
 			document.getElementById("crash").style.display="block";
