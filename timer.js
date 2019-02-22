@@ -37,6 +37,7 @@ function setBaseMin(x) {
 	baseMin = x;
 	min = x;
 	sec = 0;
+	elevation = baseElevation;
 }
 function setBaseElevation(x) {
 	baseElevation = x;
