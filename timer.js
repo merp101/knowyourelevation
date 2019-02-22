@@ -1,4 +1,4 @@
-var baseElevation = 35000;
+var baseElevation = 36000;
 var elevation = baseElevation;
 var ms = 1;
 var sec = 0;
@@ -25,7 +25,7 @@ function incTimer() {
      }
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
-  elevation -= (baseElevation / (1000 * 60 * baseMin));
+  elevation -= (baseElevation / (1000 * baseMin));
   if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").style.display="none";
