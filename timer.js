@@ -1,9 +1,14 @@
-var elevation = 39000;
+var baseElevation = 36000;
+var elevation = baseElevation;
 var ms = 1;
 var sec = 0;
 var baseMin = 35;
 var min = baseMin;
 let thresh;
+
+function lose() {
+	elevation = 0;
+}
 
 function incTimer() {
   thresh = 250;
@@ -20,7 +25,7 @@ function incTimer() {
      }
 	}
   document.getElementById("Etimer").innerHTML = elevation.toFixed(1) + " feet";
-  elevation -= (39000 / (1000 * 60 * baseMin));
+  elevation -= (baseElevation / (1000 * 60 * baseMin));
   if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").display="none";
@@ -31,6 +36,10 @@ function setBaseMin(x) {
 	baseMin = x;
 	min = x;
 	sec = 0;
+}
+function setBaseElevation(x) {
+	baseElevation = x;
+	elevation = x;
 }
 
 setInterval(
