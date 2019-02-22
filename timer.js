@@ -1,4 +1,4 @@
-var baseElevation = 36000;
+var baseElevation = 35000;
 var elevation = baseElevation;
 var ms = 1;
 var sec = 0;
@@ -11,7 +11,7 @@ function lose() {
 }
 
 function incTimer() {
-  thresh = 250;
+  thresh = 1000;
   ms += 1;
   if (ms >= thresh) {
      if (sec == 0) {
