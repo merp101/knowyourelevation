@@ -29,6 +29,7 @@ function incTimer() {
   if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
       document.getElementById("container").style.display="none";
+			document.getElementById("crash").style.display="block";
   }
 }
 
