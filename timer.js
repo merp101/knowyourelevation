@@ -28,7 +28,7 @@ function incTimer() {
   elevation -= (baseElevation / (1000 * 60 * baseMin));
   if (elevation <= 0) {
       document.getElementById("body").style.backgroundColor="black";
-      document.getElementById("container").display="none";
+      document.getElementById("container").style.display="none";
   }
 }
 
